@@ -54,11 +54,24 @@ namespace five_letter_word_library
             return result;
         }
 
-        private static int Test(List<int> bitArraysToRead, int startWord, int numberOfWordsToCombine, int amountOfLettersToUse, int n)
+        private static int Test(List<int> bitArraysToRead, int startWord, int numberOfWordsToCombine, int amountOfLettersToUse)
         {
             int wordAmount = bitArraysToRead.Count;
             int result = 0;
-            int bitResult;
+            int bitResult = bitArraysToRead[0];
+
+
+            result = Test(bitArraysToRead, startWord, numberOfWordsToCombine, amountOfLettersToUse, 1, bitResult);
+
+
+            return result;
+        }
+
+
+        private static int Test(List<int> bitArraysToRead, int startWord, int numberOfWordsToCombine, int amountOfLettersToUse, int n, int bitResult)
+        {
+            int wordAmount = bitArraysToRead.Count;
+            int result = 0;
 
             for (int i = n; i < (n + 1); i++)
             {
@@ -69,7 +82,6 @@ namespace five_letter_word_library
 
             return result;
         }
-
 
     }
 }
