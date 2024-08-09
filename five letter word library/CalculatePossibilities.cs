@@ -25,7 +25,7 @@ namespace five_letter_word_library
             int wordAmount = bitArraysToRead.Count;
             int result = 0;
 
-            Console.WriteLine("start index:" + startWord);
+            //Console.WriteLine("start index:" + startWord);
 
             for (int second = startWord + 1; second < wordAmount; second++)
             {
@@ -44,7 +44,7 @@ namespace five_letter_word_library
                             if (((bitArraysToRead[startWord] | bitArraysToRead[second] | bitArraysToRead[third] | bitArraysToRead[fourth]) & bitArraysToRead[fifth]) == 0)
                             {
                                 result++;
-                                Console.WriteLine(result);
+                                //Console.WriteLine(result);
                             }
                         }
                     }

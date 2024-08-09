@@ -54,7 +54,7 @@ namespace five_letter_word_library
             }
 
 
-            Console.WriteLine("Amount of valid words: " + bitArrays.Count());
+            //Console.WriteLine("Amount of valid words: " + bitArrays.Count());
 
             return (bitArrays, indexNoLongerInUse);
 
