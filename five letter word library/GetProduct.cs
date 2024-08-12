@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -55,6 +56,7 @@ namespace five_letter_word_library
 
 
             //Console.WriteLine("Amount of valid words: " + bitArrays.Count());
+            Debug.WriteLine("Amount of valid words: " + bitArrays.Count());
 
             return (bitArrays, indexNoLongerInUse);
 

@@ -1,4 +1,5 @@
 ﻿using System.Collections.Concurrent;
+using System.Diagnostics;
 
 namespace five_letter_word_library
 {
@@ -45,6 +46,7 @@ namespace five_letter_word_library
                             {
                                 result++;
                                 //Console.WriteLine(result);
+                                Debug.WriteLine(result);
                             }
                         }
                     }
@@ -54,34 +56,34 @@ namespace five_letter_word_library
             return result;
         }
 
-        private static int Test(List<int> bitArraysToRead, int startWord, int numberOfWordsToCombine, int amountOfLettersToUse)
-        {
-            int wordAmount = bitArraysToRead.Count;
-            int result = 0;
-            int bitResult = bitArraysToRead[0];
+        //private static int Test(List<int> bitArraysToRead, int startWord, int numberOfWordsToCombine, int amountOfLettersToUse)
+        //{
+        //    int wordAmount = bitArraysToRead.Count;
+        //    int result = 0;
+        //    int bitResult = bitArraysToRead[0];
 
 
-            result = Test(bitArraysToRead, startWord, numberOfWordsToCombine, amountOfLettersToUse, 1, bitResult);
+        //    result = Test(bitArraysToRead, startWord, numberOfWordsToCombine, amountOfLettersToUse, 1, bitResult);
 
 
-            return result;
-        }
+        //    return result;
+        //}
 
 
-        private static int Test(List<int> bitArraysToRead, int startWord, int numberOfWordsToCombine, int amountOfLettersToUse, int n, int bitResult)
-        {
-            int wordAmount = bitArraysToRead.Count;
-            int result = 0;
+        //private static int Test(List<int> bitArraysToRead, int startWord, int numberOfWordsToCombine, int amountOfLettersToUse, int n, int bitResult)
+        //{
+        //    int wordAmount = bitArraysToRead.Count;
+        //    int result = 0;
 
-            for (int i = n; i < (n + 1); i++)
-            {
+        //    for (int i = n; i < (n + 1); i++)
+        //    {
 
-            }
+        //    }
 
 
 
-            return result;
-        }
+        //    return result;
+        //}
 
     }
 }
